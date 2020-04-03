@@ -1,17 +1,15 @@
-<header class="site-header">
+{%- comment -%}
+  Include vars:
+  scrolly_nav
+{%- endcomment -%}
 
-  <div class="wrapper">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-    </nav>
-
+<!-- Header -->
+<div id="header">
+  <div class="top">
+    {%- include logo.html -%}
+    {%- include nav.html section_items=include.scrolly_nav -%}
   </div>
-
-</header>
+  <div class="bottom">
+    {%- include social_icons.html -%}
+  </div>
+</div>
