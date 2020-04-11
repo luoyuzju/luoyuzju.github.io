@@ -30,13 +30,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+encoding: utf-8
 title: HomePage
 subtitle: Leo Blog
 description: >- # this means to ignore newlines until "baseurl:"
   FakeMan, Dont believe tomorrow.
 author: Leo
 email: lynet@zju.edu.cn
-avatar: assets/images/avatar.jpg
+avatar: assets/images/avatar_jpg.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
