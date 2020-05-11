@@ -31,7 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 encoding: utf-8
-title: HomePage
+title: Leo'HomePage
 subtitle: Leo Blog
 description: >- # this means to ignore newlines until "baseurl:"
   FakeMan, Dont believe tomorrow.
