@@ -4,7 +4,6 @@ layout: base
 
 {% for post in paginator.posts %}
 <div class="post">
-
   <h2 class="post-title">
   	<a href="{{ post.url | prepend: site.baseurl }}">
   	{% if post.title %}
@@ -16,9 +15,7 @@ layout: base
   </h2>
   
   <div class="post-meta"><i class="icon-post-date"> {{ post.date | date: "%Y年%m月%d日" }}</i></div>
-  
   <div class="post-content">{{ post.content | strip_html | truncate:300 }}</div>
-  
   <p class="readmore"><a href="{{ post.url | prepend: site.baseurl }}">阅读更多</a></p>
   
 </div>
@@ -27,16 +24,16 @@ layout: base
 
 <div class="page-navigator">
 {% if paginator.previous_page %}
-{% if paginator.page == 2 %}
-  <a href="/" class="previous">上一页</a>
-{% else %}
-  <a href="/page/{{ paginator.previous_page }}" class="previous">上一页</a>
-{% endif %}
+  {% if paginator.page == 2 %}
+    <a href="/" class="previous">上一页</a>
+  {% else %}
+    <a href="/page/{{ paginator.previous_page }}" class="previous">上一页</a>
+  {% endif %}
 {% endif %}
 <!-- 中间的页数 -->
-<!-- {% if paginator.total_pages == 0 %}
+{% if paginator.total_pages != 0 %}
   <span class="page-number">第 {{ paginator.page }}/{{ paginator.total_pages }} 页</span>
-{% endif %} -->
+{% endif %}
 {% if paginator.next_page %}
   <a href="/page/{{ paginator.next_page }}" class="next">下一页</a>
 {% endif %}

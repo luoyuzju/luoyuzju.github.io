@@ -4,8 +4,7 @@ subtitle: Hi,Welcome1
 keywords: Leo,  生活记录，分享 
 description: leo's space, 暂未开通公众号
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "luozju.github.io" # 你的网址
-domain: "https://julystar.top" # 你的域名
+url: "https://julystar.top" # 你的网址
 page_no_title: "leo's blog" # 文章无标题时默认显示内容
 beian: # "备案号"
 author: leo
@@ -22,10 +21,20 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
+  
+redcarpet:
+    extensions: ["fenced_code_blocks",
+                 "tables",
+                 "highlight",
+                 "strikethrough",
+                 "no_intra_emphasis",
+                 "with_toc_data"]
+
+
 
 # Pageinate settings
-page_size: 8 # 分页大小
-paginate_path: "page:num"
+paginate: 5 # 分页大小
+paginate_path: "page/:num/"
 
 # Search settings
 baidu_search: true
@@ -39,12 +48,12 @@ menu:
   - page: 归档
     directory: archives/
     icon: icon-archive
-  - page: 关于
-    directory: about/
-    icon: icon-about
   - page: 标签
     directory: tags/
     icon: icon-tags
+  - page: 关于
+    directory: about/
+    icon: icon-about
   - page: 留言
     directory: guestbook/
     icon: icon-guestbook
@@ -63,6 +72,6 @@ valine:
   verify: false # Verification code
   visitor: true
   avatar: retro
-  placeholder: say something~~\n - 昵称 为你所要显示的评论的ID；\n - 邮箱 只有后台可见，仅供讨论过程中是否需要交流邮件而设置，请放心填写;\n - 网址 为你的评论的昵称的超链接。
+  placeholder: 可以直接在这里留言辣
   guest_info: nick,mail,link
   pageSize: 12

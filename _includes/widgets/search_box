@@ -1,6 +1,6 @@
 <div class="widget">
     <form id="search-form" class="search-form">
-      <input id="query" type="text" placeholder="Blog Search Input" class="search-form-input">
+      <input id="query" type="text" placeholder="Search" class="search-form-input">
     </form>
 </div>
 <script type="text/javascript">

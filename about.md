@@ -15,7 +15,7 @@ permalink: /about/
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <p><br/><br/><br/><br/><br/><br>
-<hr/><br/>评论一下嘛：</p>
+<hr/><br/>评论一下：</p>
 <div id="valine_comment" class="fb_comments_container"></div>
 <script>
     var notify = '{{site.valine.notify}}' === true;

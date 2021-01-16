@@ -30,14 +30,6 @@ layout: base
     {{ content }}
   </div>
 
-  <!-- <div id="donate">
-    <a href="/donate/" style="text-decoration: none">
-      <button>$ 您的支持是作者写作最大的动力!</button>
-    </a>
-  </div> -->
-
-
-
   <div class="post-nav">
     {% if page.previous %}
     <a href="{{ page.previous.url | prepend: site.baseurl }}" class="pre"><i class="icon-post-pre"> {{ page.previous.title }}</i></a>
@@ -45,7 +37,5 @@ layout: base
     <a href="{{ page.next.url | prepend: site.baseur }}" class="next">{{ page.next.title }} <i class="icon-post-next"></i></a>
     {% endif %}
   </div>
-
-
 
 </article>

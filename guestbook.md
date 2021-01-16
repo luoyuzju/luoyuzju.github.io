@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
-comments: true
+title: 留言
 permalink: /guestbook/
 ---
-
 
 <style type="text/css">
     img {
@@ -40,7 +38,6 @@ permalink: /guestbook/
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
-<p><br/><br/><br/><br/><br/><br/><br/><br/><hr /><br/>可以直接在这里留言辣：</p>
 <div id="valine_comment" class="fb_comments_container"></div>
 <script>
     var notify = '{{site.valine.notify}}' === true;

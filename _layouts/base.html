@@ -8,21 +8,21 @@
   <meta content="telephone=no" name="format-detection">
   
   <!--和标签文字相关-->
-  <title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.subtitle}}</title>
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | split: ' ' | join: ', ' }}{% else %}{{ site.keywords }}{% endif %}">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author }}">
 
-
   <link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico">
-  
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/normalize.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/pure-min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/grids-responsive-min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
 
-  <link rel="stylesheet" href="/js/styles/darcula.css">
-  <script src="/js/highlight.pack.js"></script>
+  <link rel="stylesheet" href="/assets/css/darcula.css">
+  <script src="/assets/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
@@ -70,10 +70,12 @@
             {% include widgets/search_baidu %}
             <p style="color:gray;font-size:14px">站内搜索</p>
             {% include widgets/search_box %}
+            <!-- {% include widgets/essay %} -->
             {% include widgets/category_list %}
             {% include widgets/tag_list %} 
             {% include widgets/recommend_list %}
             {% include widgets/link_list %}
+            {% include widgets/post_toc %}
           </div>
         </div>
       </div>
@@ -95,7 +97,7 @@
       
     </div>
 
-    {% include plugins/baidu_push %}
+    <!-- {% include plugins/baidu_push %} -->
 
   </body>
 
