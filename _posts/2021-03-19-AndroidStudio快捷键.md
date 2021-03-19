@@ -1,8 +1,11 @@
+---
 layout: post
 title: AndroidStudio快捷键(更新中)
 category: 客户端
-keywords: 快捷键 Android
-tags: 客户端
+keywords: 客户端 AS
+tags: 快捷键 客户端
+
+---
 
 #代码编辑
 
@@ -28,6 +31,7 @@ tags: 客户端
 |Shift + Ctrl(Command) + Enter |建立新下行
 
 # 视角
+
 |按键|说明|
 |:-:|:-:|
 |Ctrl + F12|当前文件结构|
