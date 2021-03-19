@@ -22,7 +22,6 @@ tags: 快捷键 客户端
 |Ctrl(Command) + Alt(Option) + T|为所选代码块增加嵌套|
 |Ctrl(Command) + Alt(Option) + J|添加括号()或{}|
 |Ctrl(Command) + Shift + J|把下行合并为一行|
-|Ctrl(Command) + Alt(Option) + J|添加括号()或{}|
 |Ctrl + BackSpace| 删除整个单词|
 |F2|跳转到上一个错误的地方|
 |Shift + Alt(Option) + Up/Down|代码块向上/下移动|
